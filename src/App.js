@@ -15,6 +15,11 @@ function App() {
   return (
     <div className="App">
       <BandPlan bands={bands} />
+      <div className="footer">
+        Maintained by <a href="https://sa6ham.se">SA6HAM</a>. Source code{" "}
+        <a href="https://github.com/skaramicke/bandplan.sa6ham.se">here</a>.
+        Please contribute!
+      </div>
     </div>
   );
 }

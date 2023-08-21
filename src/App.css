@@ -27,11 +27,13 @@ span.comment {
   padding: 0.5rem, 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  background-color: white;
+  color: black;
 }
