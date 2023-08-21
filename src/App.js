@@ -10,6 +10,8 @@ function App() {
     band.frequencies = frequencies;
   });
 
+  console.log(bands);
+
   return (
     <div className="App">
       <header className="App-header">Bandplan, Sweden</header>

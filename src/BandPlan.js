@@ -12,31 +12,28 @@ const frequencyText = (f, short = true) => {
 
 const FrequencyBlock = ({ frequency, min, max, width, offset }) => {
   const size = `${((frequency.to - frequency.from) / (max - min)) * 100}%`;
-  const fontSize = 10 + 5 * ((frequency.to - frequency.from) / (max - min));
+  const fontSize = 0.5 + 0.5 * ((frequency.to - frequency.from) / (max - min));
   const top = `${((frequency.from - min) / (max - min)) * 100}%`;
   const left = `${offset}%`;
   return (
     <div
+      className="frequency-block"
       style={{
-        display: "block",
-        position: "absolute",
         top,
         left,
         width,
         height: size,
-        backgroundColor: "rgba(255, 255, 255 ,0.1)",
-        overflow: "hidden",
-        fontSize: `${fontSize}px`,
-        borderTop: "1px solid rgba(255, 255, 255, 0.2)",
       }}
       title={`${frequencyText(frequency.from, false)} - ${frequencyText(
         frequency.to,
         false
       )}${frequency.comment ? "\n" + frequency.comment : ""}`}
     >
-      {frequencyText(frequency.from)} - {frequencyText(frequency.to)}
+      <span className="frequency">
+        {frequencyText(frequency.from)} - {frequencyText(frequency.to)}
+      </span>
       <br />
-      {frequency.comment}
+      <span className="comment">{frequency.comment}</span>
     </div>
   );
 };
@@ -66,27 +63,26 @@ const BandPlan = ({ bands }) => {
   return (
     <div style={{ position: "relative", width: "100vw" }}>
       {modes.map((mode) => (
-        <>
-          <div
-            style={{
-              display: "block",
-              position: "fixed",
-              backgroundColor: modeColors[mode],
-              top: 0,
-              left: `${modeOffsets[mode]}%`,
-              height: "100vh",
-              width: `${100 / (modes.length + 1)}vw`,
-            }}
-          >
-            <h3 style={{ margin: 0, padding: "0.25rem", textAlign: "center" }}>
-              {mode}
-            </h3>
-          </div>
-        </>
+        <div
+          style={{
+            display: "block",
+            position: "fixed",
+            backgroundColor: modeColors[mode],
+            top: 0,
+            left: `${modeOffsets[mode]}%`,
+            height: "100vh",
+            width: `${100 / (modes.length + 1)}vw`,
+          }}
+          key={mode}
+        >
+          <h3 style={{ margin: 0, padding: "0.25rem", textAlign: "center" }}>
+            {mode}
+          </h3>
+        </div>
       ))}
       <div>
         {bands.map((band) => (
-          <>
+          <div className="band" key={band.name}>
             <h2>{band.name}</h2>
             <div
               key={band.name}
@@ -94,7 +90,7 @@ const BandPlan = ({ bands }) => {
                 display: "block",
                 position: "relative",
                 flex: 1,
-                height: "200px",
+                height: `${(band.max - band.min) / 50}px`,
               }}
             >
               {band.frequencies.map((frequency) => (
@@ -108,7 +104,7 @@ const BandPlan = ({ bands }) => {
                 />
               ))}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

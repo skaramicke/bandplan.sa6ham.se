@@ -9,11 +9,11 @@ export const legend = {
 };
 
 export const bands = [
-  { from: k(135.7), to: k(137, 8), name: "2200m" },
+  { from: k(135.7), to: k(137.8), name: "2200m" },
   { from: k(472), to: k(479), name: "600m" },
   { from: k(1810), to: k(1838), name: "160m" },
   { from: k(3500), to: k(3580), name: "80m" },
-  { from: k(7000), to: k(7040), name: "40m" },
+  { from: k(7000), to: k(7200), name: "40m" },
   { from: k(10100), to: k(10140), name: "30m" },
   { from: k(14000), to: k(14070), name: "20m" },
   { from: k(18068), to: k(18109), name: "17m" },
@@ -32,7 +32,7 @@ export const blocks = [
     to: k(137.8),
     bandwidth: 200,
     mode: "CW",
-    commment: "CW, QRSS and narrow band digital modes",
+    comment: "CW, QRSS and narrow band digital modes",
   },
   { from: k(472), to: k(475), bandwidth: 200, mode: "CW" },
   {
@@ -40,14 +40,14 @@ export const blocks = [
     to: k(479),
     suggestedBandwidth: 500,
     mode: "Narrow band modes",
-    commment: "CW, digimodes",
+    comment: "CW, digimodes",
   },
   {
     from: k(1810),
     to: k(1838),
     bandwidth: 200,
     mode: "CW",
-    commment: "1836 kHz - CW QRP Centre of Activity",
+    comment: "1836 kHz - CW QRP Centre of Activity",
   },
   { from: k(1838), to: k(1840), bandwidth: 500, mode: "Narrow band modes" },
   {
@@ -55,7 +55,7 @@ export const blocks = [
     to: k(1843),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "Digimodes. Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
   },
   {
@@ -63,56 +63,56 @@ export const blocks = [
     to: k(2000),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
+    comment: "Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
   },
   {
     from: k(3500),
     to: k(3510),
     bandwidth: 200,
     mode: "CW",
-    commment: "Priority for inter-continental operation",
+    comment: "Priority for inter-continental operation",
   },
   {
     from: k(3510),
     to: k(3560),
     bandwidth: 200,
     mode: "CW",
-    commment: "CW contest preferred, 3555 kHz - CW QRS Centre of Activity",
+    comment: "CW contest preferred, 3555 kHz - CW QRS Centre of Activity",
   },
   {
     from: k(3560),
     to: k(3570),
     bandwidth: 200,
     mode: "CW",
-    commment: "3560 kHz - CW QRP Centre of Activity",
+    comment: "3560 kHz - CW QRP Centre of Activity",
   },
   {
     from: k(3570),
     to: k(3580),
     bandwidth: 200,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(3580),
     to: k(3590),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(3590),
     to: k(3600),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(3600),
     to: k(3620),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "Digimodes, automatically controlled data stations (unattended). Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
   },
   {
@@ -120,7 +120,7 @@ export const blocks = [
     to: k(3650),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "SSB contest preferred, 3630 kHz - Digital Voice Centre of Activity. Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
   },
   {
@@ -128,14 +128,14 @@ export const blocks = [
     to: k(3700),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "3690 kHz - SSB QRP Centre of Activity",
+    comment: "3690 kHz - SSB QRP Centre of Activity",
   },
   {
     from: k(3700),
     to: k(3775),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "SSB contest preferred, 3735 kHz - Image Centre of Activity, 3760 kHz - R1 Emergency Centre of Activity",
   },
   {
@@ -143,8 +143,7 @@ export const blocks = [
     to: k(3800),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
-      "SSB contest preferred - Priority for inter-continental operation",
+    comment: "SSB contest preferred - Priority for inter-continental operation",
   },
   { from: k(5351.5), to: k(5354.0), bandwidth: 200, mode: "CW" },
   { from: k(5351.5), to: k(5354.0), bandwidth: 200, mode: "Narrow band modes" },
@@ -153,7 +152,7 @@ export const blocks = [
     to: k(5366.0),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "USB recommended for voice operation. ",
+    comment: "USB recommended for voice operation. ",
   },
   {
     from: k(5366.0),
@@ -166,28 +165,28 @@ export const blocks = [
     to: k(7040),
     bandwidth: 200,
     mode: "CW",
-    commment: "7030 kHz - CW, QRP Centre of Activity",
+    comment: "7030 kHz - CW, QRP Centre of Activity",
   },
   {
     from: k(7040),
     to: k(7047),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(7047),
     to: k(7050),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(7050),
     to: k(7053),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "Digimodes, automatically controlled data stations (unattended). Lowest dial setting for LSB Voice mode: 1843, 3603, 7053 kHz",
   },
   {
@@ -195,14 +194,14 @@ export const blocks = [
     to: k(7060),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(7060),
     to: k(7100),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "SSB contest preferred, 7070 kHz - Digital Voice Centre of Activity, 7090 kHz - SSB QRP Centre of Activity",
   },
   {
@@ -210,63 +209,63 @@ export const blocks = [
     to: k(7130),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "7110 kHz - Region 1 Emergency Centre",
+    comment: "7110 kHz - Region 1 Emergency Centre",
   },
   {
     from: k(7130),
     to: k(7175),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "SSB contest preferred, 7165 kHz - Image Centre of Activity",
+    comment: "SSB contest preferred, 7165 kHz - Image Centre of Activity",
   },
   {
     from: k(7175),
     to: k(7200),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "SSB contest preferred - Priority for inter-continental Activity",
+    comment: "SSB contest preferred - Priority for inter-continental Activity",
   },
   {
     from: k(10100),
     to: k(10130),
     bandwidth: 200,
     mode: "CW",
-    commment: "10116 kHz - CW QRP Centre of Activity",
+    comment: "10116 kHz - CW QRP Centre of Activity",
   },
   {
     from: k(10130),
     to: k(10150),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(14000),
     to: k(14060),
     bandwidth: 200,
     mode: "CW",
-    commment: "CW contest preferred, 14055 kHz - QRS Centre of Activity",
+    comment: "CW contest preferred, 14055 kHz - QRS Centre of Activity",
   },
   {
     from: k(14060),
     to: k(14070),
     bandwidth: 200,
     mode: "CW",
-    commment: "14060 kHz - CW QRP Centre of Activity",
+    comment: "14060 kHz - CW QRP Centre of Activity",
   },
   {
     from: k(14070),
     to: k(14089),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(14089),
     to: k(14099),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(14099),
@@ -280,7 +279,7 @@ export const blocks = [
     to: k(14112),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   { from: k(14112), to: k(14125), bandwidth: 2700, mode: "All modes" },
   {
@@ -288,7 +287,7 @@ export const blocks = [
     to: k(14300),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "SSB contest preferred, 14130 kHz - Digital Voice Centre of Activity, 14195 ±5 kHz - Priority for DX-peditions, 14230 kHz - Image Centre of Activity, 14285 kHz - SSB QRP Centre of Activity",
   },
   {
@@ -296,28 +295,28 @@ export const blocks = [
     to: k(14350),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "14300 kHz - Global Emergency, Centre of Activity",
+    comment: "14300 kHz - Global Emergency, Centre of Activity",
   },
   {
     from: k(18068),
     to: k(18095),
     bandwidth: 200,
     mode: "CW",
-    commment: "18086 kHz - CW QRP Centre of Activity",
+    comment: "18086 kHz - CW QRP Centre of Activity",
   },
   {
     from: k(18095),
     to: k(18105),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(18105),
     to: k(18109),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(18109),
@@ -331,14 +330,14 @@ export const blocks = [
     to: k(18120),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(18120),
     to: k(18168),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "18130 kHz - SSB QRP Centre of Activity, 18150 kHz - Digital Voice Centre of Activity, 18160 kHz - Emergency Centre of Activity",
   },
   {
@@ -346,7 +345,7 @@ export const blocks = [
     to: k(21070),
     bandwidth: 200,
     mode: "CW",
-    commment:
+    comment:
       "21055 kHz - QRS Centre of Activity,  21060 kHz - QRP Centre of Activity",
   },
   {
@@ -354,21 +353,21 @@ export const blocks = [
     to: k(21090),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(21090),
     to: k(21110),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(21110),
     to: k(21120),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "Digimodes, automatically controlled data stations (unattended), (not SSB)",
   },
   { from: k(21120), to: k(21149), bandwidth: 500, mode: "Narrow band modes" },
@@ -384,7 +383,7 @@ export const blocks = [
     to: k(21450),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "21180 kHz - Digital Voice Centre of Activity, 21285 kHz - SSB QRP Centre of Activity, 21340 kHz - Image Centre of Activity, 21360 kHz - Global Emergency Centre of Activity",
   },
   {
@@ -392,21 +391,21 @@ export const blocks = [
     to: k(24915),
     bandwidth: 200,
     mode: "CW",
-    commment: "24906 kHz - CW QRP Centre of Activity",
+    comment: "24906 kHz - CW QRP Centre of Activity",
   },
   {
     from: k(24915),
     to: k(24925),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(24925),
     to: k(24929),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(24929),
@@ -420,14 +419,14 @@ export const blocks = [
     to: k(24940),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(24940),
     to: k(24990),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "24950 kHz - Centre of Activity SSB QRP, 24960 kHz - Digital Voice Centre of Activity",
   },
   {
@@ -435,7 +434,7 @@ export const blocks = [
     to: k(28070),
     bandwidth: 200,
     mode: "CW",
-    commment:
+    comment:
       "28055 kHz - QRS Centre of Activity, 28060 kHz - QRP Centre of Activity",
   },
   {
@@ -443,14 +442,14 @@ export const blocks = [
     to: k(28120),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes",
+    comment: "Digimodes",
   },
   {
     from: k(28120),
     to: k(28150),
     bandwidth: 500,
     mode: "Narrow band modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   { from: k(28150), to: k(28190), bandwidth: 500, mode: "Narrow band modes" },
   {
@@ -482,47 +481,47 @@ export const blocks = [
     to: k(28300),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Beacons",
+    comment: "Beacons",
   },
   {
     from: k(28300),
     to: k(28320),
     bandwidth: 2700,
     mode: "All modes",
-    commment: "Digimodes, automatically controlled data stations (unattended)",
+    comment: "Digimodes, automatically controlled data stations (unattended)",
   },
   {
     from: k(28320),
     to: k(29000),
     bandwidth: 2700,
     mode: "All modes",
-    commment:
+    comment:
       "28330 kHz - Digital Voice Centre of Activity, 28360 kHz - SSB QRP Centre of Activity, 28680 kHz - Image Centre of Activity",
   },
   {
     from: k(29000),
     to: k(29100),
     mode: "All modes",
-    commment: "Unrestricted bandwidth",
+    comment: "Unrestricted bandwidth",
   },
   {
     from: k(29100),
     to: k(29200),
     mode: "All modes",
-    commment: "FM simplex - 10 kHz channels. Unrestricted bandwidth",
+    comment: "FM simplex - 10 kHz channels. Unrestricted bandwidth",
   },
   {
     from: k(29200),
     to: k(29300),
     mode: "All modes",
-    commment:
+    comment:
       "Digimodes, automatically controlled data stations (unattended). Unrestricted bandwidth",
   },
   {
     from: k(29300),
     to: k(29510),
     mode: "Satellite Links",
-    commment: "Unrestricted bandwidth",
+    comment: "Unrestricted bandwidth",
   },
   {
     from: k(29510),
@@ -536,28 +535,28 @@ export const blocks = [
     to: k(29590),
     bandwidth: 6000,
     mode: "All modes",
-    commment: "FM Repeater input (RH1- RH8)",
+    comment: "FM Repeater input (RH1- RH8)",
   },
   {
     from: k(29600) - 6000 / 2,
     to: k(29600) + 6000 / 2,
     bandwidth: 6000,
     mode: "All modes",
-    commment: "FM Calling channel",
+    comment: "FM Calling channel",
   },
   {
     from: k(29610) - 6000 / 2,
     to: k(29610) + 6000 / 2,
     bandwidth: 6000,
     mode: "All modes",
-    commment: "FM Simplex Repeater (parrot, input + output",
+    comment: "FM Simplex Repeater (parrot, input + output",
   },
   {
     from: k(29620),
     to: k(29700),
     bandwidth: 6000,
     mode: "All modes",
-    commment: "FM Repeater output (RH1- RH8)",
+    comment: "FM Repeater output (RH1- RH8)",
   },
 
   // 6m
