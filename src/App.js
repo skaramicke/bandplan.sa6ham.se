@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Bandplan, Sweden</header>
       <BandPlan bands={bands} />
     </div>
   );
