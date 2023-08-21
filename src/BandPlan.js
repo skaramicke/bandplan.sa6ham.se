@@ -12,7 +12,6 @@ const frequencyText = (f, short = true) => {
 
 const FrequencyBlock = ({ frequency, min, max, width, offset }) => {
   const size = `${((frequency.to - frequency.from) / (max - min)) * 100}%`;
-  const fontSize = 0.5 + 0.5 * ((frequency.to - frequency.from) / (max - min));
   const top = `${((frequency.from - min) / (max - min)) * 100}%`;
   const left = `${offset}%`;
   return (
@@ -109,52 +108,6 @@ const BandPlan = ({ bands }) => {
       </div>
     </div>
   );
-
-  // return (
-  //   <div style={{position: 'relative'}}>
-  //     {modeOffsets.map((mode) => (
-  //       <>
-  //       <div
-  //         style={{
-  //           display: "block",
-  //           position: "absolute",
-  //           top: 0,
-  //           left: `${mode}%`,
-  //           height: "100%",
-  //           width: `${100/modes.length}px`,
-  //         }}
-  //       >
-  //         {mode}
-  //       </div>
-  //     <div>
-  //       {bands.map((band) => (
-  //         <>
-  //           <h2>{band.name}</h2>
-  //           <div
-  //             key={band.name}
-  //             style={{
-  //               display: "block",
-  //               position: "relative",
-  //               flex: 1,
-  //               height: "200px",
-  //             }}
-  //           >
-  //             {band.frequencies.map((frequency) => (
-  //               <FrequencyBlock
-  //                 key={`${frequency.from}-${frequency.to}-${frequency.mode}-${frequency.comment}`}
-  //                 frequency={frequency}
-  //                 min={band.min}
-  //                 max={band.max}
-  //                 offset={modeOffsets[frequency.mode]}
-  //               />
-  //             ))}
-  //           </div>
-  //         </>
-  //       )}
-  //     </div>
-  //     </>
-  //   </div>
-  // );
 };
 
 export default BandPlan;
