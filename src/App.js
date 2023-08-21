@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BandPlan from "./BandPlan";
+import { bands, blocks } from "./frequencies";
 
 function App() {
+  bands.forEach((band) => {
+    const frequencies = blocks.filter(
+      (block) => block.from >= band.from && block.to <= band.to
+    );
+    band.frequencies = frequencies;
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">Bandplan, Sweden</header>
+      <BandPlan bands={bands} />
     </div>
   );
 }
