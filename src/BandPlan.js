@@ -89,15 +89,15 @@ const BandPlan = ({ bands }) => {
                 display: "block",
                 position: "relative",
                 flex: 1,
-                height: `${(band.max - band.min) / 50}px`,
+                height: `${(band.to - band.from) / 1000}px`,
               }}
             >
               {band.frequencies.map((frequency) => (
                 <FrequencyBlock
                   key={`${frequency.from}-${frequency.to}-${frequency.mode}-${frequency.comment}`}
                   frequency={frequency}
-                  min={band.min}
-                  max={band.max}
+                  min={band.from}
+                  max={band.to}
                   offset={modeOffsets[frequency.mode]}
                   width={`${100 / (modes.length + 1)}vw`}
                 />

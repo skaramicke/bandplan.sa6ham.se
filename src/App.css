@@ -15,6 +15,12 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.frequency-block:hover {
+  overflow: visible;
+  z-index: 1000;
+  background-color: white;
+}
+
 span.frequency {
   display: block;
   width: 100%;
@@ -23,8 +29,16 @@ span.frequency {
 }
 
 span.comment {
+  display: block;
   font-size: 0.8rem;
-  padding: 0.5rem, 0;
+  padding: 0.5rem;
+}
+
+.frequency-block:hover span {
+  background-color: black;
+  transform: scale(1.1) translate(-5rem, 0.5rem);
+  z-index: 1000;
+  box-shadow: 0.2rem 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .footer {
